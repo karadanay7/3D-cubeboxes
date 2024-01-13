@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 w-full">
+  <div class="bg-pink-100 w-full">
     <div class="mx-auto flex items-center justify-center flex-col md:flex-row">
       <div class="flex items-center justify-center md:justify-start pt-5">
         <NuxtLink to="/" class="hover:underline non-italic">

@@ -1,52 +1,38 @@
 <template>
-  <div class="w-full border-b flex items-center justify-center bg-transparent">
+  <div class="w-full border-b flex items-center justify-center bg-violet-100">
     <div
       class="flex items-center justify-between px-4 text-black d md:px-8 py-2"
     >
       <div class="flex items-center">
-        <nuxt-link to="/">
-          <nuxt-img
-            src="/icologo.png"
-            alt="Logo"
-            format="webp"
-            class="h-6 sm:h-12 md:h-18 pr-4"
-            sizes="sm:100vw md:100vw lg:400px"
-          />
+        <nuxt-link
+          to="/"
+          class="md:flex text-sm sm:text-lg md:text-2xl font-mono text-blue-300"
+        >
+          AXK
         </nuxt-link>
       </div>
-      <button
-        @click="toggleMenu()"
-        class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-400"
-      >
+      <button @click="toggleMenu()" class="md:hidden p-2 rounded">
         <Icon
           :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'"
-          class="w-6 h-6 text-gray-700"
+          class="w-6 h-6 text-violet-300"
         />
       </button>
       <!-- Desktop menu -->
       <ul
-        class="hidden md:flex text-sm sm:text-lg md:text-2xl flex-row text-black text-shadow navbar font-mono"
+        class="hidden md:flex text-sm sm:text-lg md:text-2xl flex-row text-blue-300 text-shadow navbar font-mono"
       >
         <li class="hover:scale-110">
-          <nuxt-link to="/" class="pl-4 sm:pl-8 md:pl-12 lg:pl-16"
-            >Home</nuxt-link
-          >
+          <p class="pl-4 sm:pl-8 md:pl-12 lg:pl-16">Home</p>
         </li>
         <li class="hover:scale-110">
-          <nuxt-link to="/about" class="pl-4 sm:pl-8 md:pl-12 lg:pl-16"
-            >About</nuxt-link
-          >
+          <p class="pl-4 sm:pl-8 md:pl-12 lg:pl-16">About</p>
         </li>
         <li class="hover:scale-110">
-          <nuxt-link to="/services" class="pl-4 sm:pl-8 md:pl-12 lg:pl-16"
-            >Services</nuxt-link
-          >
+          <p class="pl-4 sm:pl-8 md:pl-12 lg:pl-16">Services</p>
         </li>
 
         <li class="hover:scale-110">
-          <nuxt-link to="/contact" class="pl-4 sm:pl-8 md:pl-12 lg:pl-16"
-            >Contact</nuxt-link
-          >
+          <p class="pl-4 sm:pl-8 md:pl-12 lg:pl-16">Contact</p>
         </li>
       </ul>
     </div>
@@ -57,32 +43,32 @@
       <li>
         <nuxt-link
           to="/"
-          class="block py-2 px-4 text-black pl-8 hover:text-gray-900 hover:scale-110"
+          class="block py-2 px-4 text-blue-300 pl-8 hover:text-gray-900 hover:scale-110"
           aria-current="page"
           >Home</nuxt-link
         >
       </li>
       <li>
-        <nuxt-link
-          to="/about"
-          class="block py-2 px-4 text-black pl-8 hover:text-gray-900 hover:scale-110"
-          >Portfolio</nuxt-link
+        <p
+          class="block py-2 px-4 text-blue-300 pl-8 hover:text-gray-900 hover:scale-110"
         >
+          Portfolio
+        </p>
       </li>
       <li>
-        <nuxt-link
-          to="/services"
-          class="block py-2 px-4 text-black pl-8 hover:text-gray-900 hover:scale-110"
+        <p
+          class="block py-2 px-4 text-blue-300 pl-8 hover:text-gray-900 hover:scale-110"
           aria-current="page"
-          >About</nuxt-link
         >
+          About
+        </p>
       </li>
       <li>
-        <nuxt-link
-          to="/contact"
-          class="block py-2 px-4 text-black pl-8 hover:text-gray-900 hover:scale-110"
-          >Contact</nuxt-link
+        <p
+          class="block py-2 px-4 text-blue-300 pl-8 hover:text-gray-900 hover:scale-110"
         >
+          Contact
+        </p>
       </li>
     </ul>
   </div>
